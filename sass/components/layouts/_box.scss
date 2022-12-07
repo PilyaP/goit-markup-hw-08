@@ -1,0 +1,37 @@
+
+
+
+
+
+.box
+{
+
+    @extend .gap;
+    &__trumb
+{position: relative;
+
+}
+&__text {
+    @include font(700, null, calc(16 / 14), null);   
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+
+}
+
+&__block {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @extend .display;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+    
+&__item
+{
+    width: calc((100% - 60px)/3);
+}
+}
+

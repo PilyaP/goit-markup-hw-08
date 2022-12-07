@@ -1,0 +1,83 @@
+
+
+.header-nav-link
+
+{
+text-decoration: none;
+color:inherit ;
+@include font(500, null, 1.1428, 0.02em);   
+padding-top: 32px;
+padding-bottom: 32px;
+display: flex;
+position: relative;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus
+{
+    color: $blue;
+
+}
+}
+
+
+
+
+.courrent
+{
+    color: $blue;
+    &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: $blue;
+    border-radius: 2px;
+}
+}
+
+    .header
+    {
+        border-bottom: 1px solid $white-header;
+    }
+    .nav{
+        display: flex;
+margin-right: auto;
+}
+
+
+.text {
+    font-family: $secondary-font;
+    @include font(700, 26px, 1.1923, null);   
+    color: $logo-blk;
+    display: flex;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    
+    
+    }
+
+
+
+.header-icon{
+    margin-right: 10px;
+    fill: currentColor;
+}
+.contacts
+{
+    @include font(500, null, 1.1428, 0.02em);   
+    color: $gray;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+&:focus
+{
+    color: $blue;
+}
+}

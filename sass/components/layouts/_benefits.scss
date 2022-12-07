@@ -1,0 +1,30 @@
+
+.benefits
+{
+    
+    @extend .gap;
+    &__item
+    {
+    flex-basis: calc(100% - 90px)/4;
+    }
+    &__paragraph
+    {
+    
+    @include font(400, null, 1.7142, null);   
+    color: $gray;
+    }
+    &__title
+    {
+        @include font(null, 14px, 1.1428, null);   
+    margin-bottom: 10px;
+    }
+    &__icon{
+        
+        height: 120px;
+        background-color: $botton-two;
+        border-radius: 4px;
+        @extend .display;
+        margin-bottom: 30px;
+    }
+}
+
