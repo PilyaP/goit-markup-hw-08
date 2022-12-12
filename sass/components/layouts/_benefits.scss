@@ -3,9 +3,22 @@
 {
     
     @extend .gap;
+    flex-wrap: wrap;
     &__item
     {
-    flex-basis: calc(100% - 90px)/4;
+        @media screen and (min-width: 768px) {
+
+            width: calc((100% - 30px) / 2);
+        }
+        @media screen and (min-width: 1200px) {
+            
+    width: calc((100% - 90px) / 4);
+    
+    
+        }
+
+
+
     }
     &__paragraph
     {
@@ -15,9 +28,18 @@
     }
     &__title
     {
-        @include font(null, 14px, 1.1428, null);   
+        @include font(null, 14px, 1.14, null);   
+        text-transform: uppercase;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+
+        text-align: center;
     }
+    
+}
+
+
     &__icon{
         
         height: 120px;
