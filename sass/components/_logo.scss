@@ -12,10 +12,56 @@
         
         }
 
-        .logo-footer
-{
-    display: block;
-    margin-bottom: 20px;
-    text-decoration: none;
+//         .logo-footer
+// {
+//     display: inline-block;
+//     margin-bottom: 20px;
+//     text-decoration: none;
+//     margin-left: 163px;
+//     margin-right: 163px;
+// @include desktop {
+//     margin-left: 0;
+// }
 
+
+
+
+.logo {
+	color: $blue;
+
+	font-family: $secondary-font;
+	font-size: 24px;
+	line-height: 1.17;
+
+	&--header {
+		margin-right: 93px;
+	}
+
+	&--footer {
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+	@include toTablet {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+}
+
+.logo__part {
+	color: $logo-blk;
+
+	&--inverse {
+		color: $white;
+	}
+}
+
+@include desktop {
+	.logo {
+		font-size: 26px;
+		line-height: 1.19;
+
+		&--header {
+			margin-right: 93px;
+		}
+	}
 }
