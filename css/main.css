@@ -256,6 +256,7 @@ a {
 .logo--footer {
   display: inline-block;
   margin-bottom: 20px;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .logo {
@@ -280,6 +281,15 @@ a {
     margin-right: 93px;
   }
 }
+.content-footer {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .content-footer {
+    text-align: left;
+  }
+}
+
 .header-page {
   border-bottom: solid 1px #ECECEC;
 }
@@ -908,6 +918,7 @@ a {
 }
 .soc__label {
   margin-bottom: 20px;
+  text-align: center;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
@@ -1108,6 +1119,15 @@ a {
 }
 .studio-adress__link--dark {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.studio-adress__item {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .studio-adress__item {
+    text-align: left;
+  }
 }
 
 .portfolio-paragraf {

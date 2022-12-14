@@ -1,18 +1,4 @@
 
-// .web
-// {
-
-//     font-family: $secondary-font;
-//     @include font(700, 26px, 1.1923, null);   
-//     color: $blue;}
-//     .studio-white {
-//         font-family: $secondary-font;
-//         @include font(700, 26px, 1.1923, null);
-//         color: $white;
-        
-//         }
-
-
 
 
 
@@ -30,6 +16,7 @@
 	&--footer {
 		display: inline-block;
 		margin-bottom: 20px;
+		text-align: center;
 	}
 	@include toTablet {
 		padding-top: 16px;
@@ -55,3 +42,11 @@
 		}
 	}
 }
+.content-footer{
+	text-align: center;
+	@include desktop{
+
+		text-align: left;
+	}
+		
+	}
