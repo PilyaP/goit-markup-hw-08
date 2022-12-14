@@ -1,5 +1,5 @@
 
-.page-header {
+.header-page {
 	border-bottom: solid 1px $white-header;
 	&__wrap {
 		display: flex;
@@ -7,10 +7,10 @@
 	}
 }
 
-.navigation {
+.nav {
 	display: flex;
 	align-items: center;
-	.navigation__menu {
+	&__menu {
 		display: none;
 		@include tablet {
 			display: flex;
@@ -245,7 +245,7 @@
 }
 
 
-.mobile-social-net {
+.mobile-soc {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
