@@ -16,10 +16,19 @@
 
 .modal 
 {
-width: 528px;
+	width: 95vw;
+	height: 76vh;
 padding: 40px;
-min-height: 581px;
-background-color: #fff;
+@include mobile {
+    width: 450px;
+    max-height: 625px;
+}
+
+@include desktop {
+    width: 528px;
+    height: 581px;
+}
+background-color: $white;
 border-radius: 1px;
 position: absolute;
 top: 50%;
