@@ -12,40 +12,84 @@
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="container link-item">
-            <nav class="nav">
-            <a class="text" href="/"><span class="web">Web</span>Studio</a>
-            <ul class="header-container">
-            
-                <li class="item"><a class="header-nav-link courrent" href="./index.html">Студія</a>
-                </li>
-                <li class="item">
-                <a class="header-nav-link" href="./portfolio.html">
-                Портфоліо
-            </a>
-            </li>
-                <li class="item">
-<a class="header-nav-link" href="#">
-                    Контакти</a>
-            </li>
-            </ul>
-            </nav>
-        
-            <ul class="link-item contacts-flex">
-                <li>
-                <a class="contacts" href="mailto:info@devstudio.com"><svg class="header-icon" width="16" height="12">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                </svg> info@devstudio.com</a>
-            </li>
-            <li>
-                <a class="contacts" href="tel:+380961111111"><svg class="header-icon" width="10"  height="16">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg> 38 096 111 11 11</a>
-            </li>
-            </ul>
-        </div>
-    </header>
+    <body>
+        <header class="page-header">
+            <div class="container page-header__wrap">
+                <nav class="navigation">
+                    <a href="./index.html" lang="en" class="logo logo--header">Web<span class="logo__part">Studio</span></a>
+                    <ul class="navigation__menu">
+                        <li class="navigation__item">
+                            <a href="./index.html" class="navigation__link  navigation__link--current">Студія</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__link">
+                            <svg class="contacts__icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a
+                        >
+                    </li>
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link">
+                            <svg class="contacts__icon" width="10" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
+                    </li>
+                </ul>
+                <button class="mobile-menu__button js-open-menu">
+                    <svg class="mobile-menu___icon" width="24" height="16">
+                        <use href="./images/icons.svg#icon-mobilemenu"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu js-menu-container">
+                    <div class="container mobile-menu__container">
+                        <div class="mobile-menu__top">
+                            <button class="mobile-menu__button js-close-menu">
+                                <svg class="mobile-menu__icon" width="19" height="19">
+                                    <use href="./images/icons.svg#icon-x"></use>
+                                </svg>
+                            </button>
+                            <ul class="mobile-nav">
+                                <li class="mobile-nav__item">
+                                    <a href="./index.html" class="mobile-nav__link  mobile-nav__link--current">Студія</a>
+                                </li>
+                                <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a></li>
+                                <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Контакти</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile-menu__bottom">
+                            <ul class="mobile-contacts">
+                                <li class="mobile-contacts__item">
+                                    <a href="tel:+380961111111" class="mobile-contacts__link"> +38 096 111 11 11</a>
+                                </li>
+                                <li class="mobile-contacts__item">
+                                    <a href="mailto:info@devstudio.com" class="mobile-contacts__link"> info@devstudio.com</a>
+                                </li>
+                            </ul>
+                            <ul class="mobile-social-net">
+                                <li class="mobile-social-net__item">
+                                    <a href="#" class="mobile-social-net__link">Instagram </a>
+                                </li>
+                                <li class="mobile-social-net__item">
+                                    <a href="#" class="mobile-social-net__link">Twitter</a>
+                                </li>
+                                <li class="mobile-social-net__item">
+                                    <a href="#" class="mobile-social-net__link">Facebook</a>
+                                </li>
+                                <li class="mobile-social-net__item">
+                                    <a href="#" class="mobile-social-net__link">Linkedin</a>
+                                </li>
+                            </ul></div>
+                    </div>
+                </div>
+            </div>
+        </header>
         <main>
         <section class="color-section">
         <div class="hero-container">
@@ -63,7 +107,7 @@
                 <div class="benefits__icon"> <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-antenna"></use>
                 </svg></div>
-                <h3 class="benefits__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <h3 class="benefits__title">Увага до деталей</h3>
                 <p class="benefits__paragraph">
                     Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                 </p>
@@ -72,7 +116,7 @@
                 <div class="benefits__icon"> <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-clock"></use>
                 </svg></div>
-                <h3 class="benefits__title">ПУНКТУАЛЬНІСТЬ</h3>
+                <h3 class="benefits__title">Пунктуальність</h3>
                 <p class="benefits__paragraph">
                     Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
                 </p>
@@ -81,7 +125,7 @@
                 <div class="benefits__icon"> <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-diagram"></use>
                 </svg></div>
-                <h3 class="benefits__title">ПЛАНУВАННЯ</h3>
+                <h3 class="benefits__title">Планування</h3>
                 <p class="benefits__paragraph">
                     Так само консультація з широким активом значною мірою зумовлює.
                 </p>
@@ -90,7 +134,7 @@
                 <div class="benefits__icon"> <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg></div>
-                <h3 class="benefits__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <h3 class="benefits__title">Сучасні технології</h3>
                 <p class="benefits__paragraph">
                     Значимість цих проблем настільки очевидна, що реалізація планових завдань.
                 </p>
@@ -140,7 +184,23 @@
         <h2 class="team-title">Наша команда</h2>
         <ul class="team">
                 <li class="team__item">
-            <img src="./images/pers1.jpg" alt="Ігор Дем'яненко"  width="270"  height="260">
+                    <picture>
+                        <source srcset="./images/pers1.jpg 1x, ./images/pers1-2x.jpg 2x" 
+                        media="(min-width: 1200px)"
+                        />
+                        <source srcset="./images/pers1-tab.jpg 1x, ./images/pers1-tab-2x.jpg 2x" 
+                        media="(min-width: 768px)"
+                        />
+                        <source srcset="./images/pers1-mob.jpg 1x, ./images/pers1-mob-2x.jpg 2x" 
+                        media="(max-width: 767px)"
+                        />
+                        <img 
+            src="./images/pers1-mob-2x.jpg" 
+            alt="Ігор Дем'яненко"  
+            width="450"
+            />
+                    </picture>
+            
                 <div class="team__size">
                     <h3 class="team__name">Ігор Дем'яненко</h3>
                     <p class="team__profession">Product Designer</p>
@@ -178,7 +238,21 @@
                 
             </li>
             <li class="team__item">
-                <img src="./images/pers2.jpg" alt="Ольга Рєпіна"  width=270  height="260">
+                <picture>
+                    <source srcset="./images/pers2.jpg 1x, ./images/pers2-2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                    />
+                    <source srcset="./images/pers2-tab.jpg 1x, ./images/pers2-tab-2x.jpg 2x" 
+                    media="(min-width: 768px)"
+                    />
+                    <source srcset="./images/pers2-mob.jpg 1x, ./images/pers2-mob-2x.jpg 2x" 
+                    media="(max-width: 767px)"
+                    />
+                    <img 
+        src="./images/pers2-mob-2x.jpg" 
+        alt="Ольга Рєпіна"  
+        width="450"
+        />
                 <div class="team__size"> 
                     <h3 class="team__name">Ольга Рєпіна</h3>
                     <p class="team__profession">Frontend Developer</p>
@@ -215,7 +289,21 @@
                 </div>    
             </li>
             <li class="team__item">
-                <img src="./images/pers3.jpg" alt="Микола Тарасов"  width=270  height="260">
+                <picture>
+                    <source srcset="./images/pers3.jpg 1x, ./images/pers3-2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                    />
+                    <source srcset="./images/pers3-tab.jpg 1x, ./images/pers3-tab-2x.jpg 2x" 
+                    media="(min-width: 768px)"
+                    />
+                    <source srcset="./images/pers3-mob.jpg 1x, ./images/pers3-mob-2x.jpg 2x" 
+                    media="(max-width: 767px)"
+                    />
+                    <img 
+        src="./images/pers3-mob-2x.jpg" 
+        alt="Микола Тарасов"  
+        width="450"
+        />
                 <div class="team__size"> 
                     <h3 class="team__name">Микола Тарасов</h3>
                     <p class="team__profession">Marketing</p>
@@ -252,7 +340,21 @@
                 </div>    
             </li>
             <li class="team__item">
-                <img src="./images/pers4.jpg" alt="Михайло Єрмаков"  width=270  height="260">
+                <picture>
+                    <source srcset="./images/pers4.jpg 1x, ./images/pers4-2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                    />
+                    <source srcset="./images/pers4-tab.jpg 1x, ./images/pers4-tab-2x.jpg 2x" 
+                    media="(min-width: 768px)"
+                    />
+                    <source srcset="./images/pers4-mob.jpg 1x, ./images/pers4-mob-2x.jpg 2x" 
+                    media="(max-width: 767px)"
+                    />
+                    <img 
+        src="./images/pers4-mob-2x.jpg" 
+        alt="Михайло Єрмаков"  
+        width="450"
+        />
                 <div class="team__size">
                     <h3 class="team__name">Михайло Єрмаков</h3>
                     <p class="team__profession">UI Designer</p>
@@ -290,7 +392,7 @@
             </li>
         </ul>
     </div>  
-    </section> -->
+    </section>
     <section class="section">
     <div class="container">
         <h2 class="client-title">Постійні клієнти</h2>
@@ -340,7 +442,7 @@
         </ul>
     </div>
     </section>
-    </main> -->
+    </main>
 
     <footer class="page-footer">
         <div class="container page-footer__container">
@@ -473,5 +575,6 @@
                 </div>
             </div>
                 <script src="./js/modal.js"></script>
+                <script src="./js/mobile-menu.js"></script>
             </body>
             </html>
